@@ -9,6 +9,10 @@ body {
 .pd {
     padding: 16px 15%;
 }
+
+.pd-tight {
+    padding: 16px 25%;
+}
 .header {
     display: flex;
     background-color: #1f2937;
@@ -33,13 +37,21 @@ body {
     text-decoration: none;
     color: #f9faf8;
 }
+
+.panel-padding {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.panel-padding-wide {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 .panel-1 {
     background-color: #1f2937;
     color: #f9faf8;
     display:flex;
     gap: 32px;
-    padding-top: 100px;
-    padding-bottom: 100px;
     justify-content: center;
 }
 .p1-message {
@@ -48,12 +60,12 @@ body {
     padding-right: 32px;
     width: 40%;
 }
-.p1-message .p1-title{
+.title{
     font-size: 48px;
     font-weight: bolder;
     padding-right:64px;
 }
-.p1-message .p1-subtitle{
+.subtitle{
     color: #E5E7EB;
     font-size: 18px;
 }
@@ -76,11 +88,12 @@ button.signup-button {
     color: white;
     font-size: 16px;
     font-weight: 700;
+    transition: 0.5s;
 }
 button.signup-button:hover {
     background-color: #0866fd;
     border: 1px solid  #0866fd;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 .p1-image{
     width: 60%;
@@ -95,4 +108,89 @@ button.signup-button:hover {
     align-items: center;
     justify-content: center;
     flex: 1 1 auto;
+}
+.panel-2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight:bolder;
+}
+.gallery-wrapper {
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 56px;
+    gap: 56px;
+}
+
+.gallery-item {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    gap: 16px;
+}
+
+.gallery-item span {
+    text-align: center;
+}
+.gallery-border {
+    width: 250px;
+    height: 250px;
+    border: 5px solid #3882F6;
+    border-radius: 5%;
+}
+
+.gallery-subtitle {
+    color: #1f2937;
+    width: auto;
+}
+
+.panel-3 {
+    background-color: #E5E7EB;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote-wrapper {
+    display:flex;
+    flex-direction:column;
+    gap: 18px;
+}
+.quote {
+    font-style: italic;
+    font-size: 36px;
+    color: #1f2937;
+}
+.quoter {
+    display:flex;
+    justify-content: right;
+}
+
+.heading-2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #1f2937;
+    text-align: right;
+}
+.call-panel {
+    background-color: #3882F6;
+    border: 1px solid #3882F6;
+    border-radius: 10px;
+    padding: 100px 200px;
+    display: flex;
+}
+
+.call-wrapper {
+    display: flex;
+}
+.call-header-text {
+    text-align:left;
+    color:white;
 }
